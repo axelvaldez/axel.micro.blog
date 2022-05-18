@@ -229,6 +229,13 @@ article a{
 	font-weight: normal;
 }
 
+article img{
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 1.5rem;
+}
+
 article:not(:last-child){
 	margin-bottom: 3rem;
 	padding-bottom: 3rem;
