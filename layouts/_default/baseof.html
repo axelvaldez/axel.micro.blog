@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+    {{ partial "head.html" . }}
+	{{ $data := newScratch }}
+	{{ $data.Set "page" "post" }}
+	{{ if .IsPage }}
+		{{ $data.Set "page" "page" }}
+    {{ end}}
+    <body>
+        {{ partial "header.html" . }}
+        {{ block "main" . }}{{ end }}
+        {{ partial "footer.html" . }}
+    </body>
+</html>

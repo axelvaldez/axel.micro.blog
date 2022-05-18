@@ -1,0 +1,20 @@
+<div class="row">
+    <div class="col-6">
+        {{ if .NextPage }}
+        <p>
+            <a href="{{ .NextPage.RelPermalink }}" id="article-nav-newer" class="lead font-weight-bold">
+                ←
+            </a>
+        </p>
+        {{ end }}
+    </div>
+    <div class="col-6 text-right">
+        {{ if .PrevPage }}
+        <p>
+            <a href="{{ .PrevPage.RelPermalink }}" id="article-nav-older" class="lead">
+                →
+            </a>
+        </p>
+        {{ end }}
+    </div>
+</div>
